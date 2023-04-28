@@ -144,6 +144,9 @@ img {
 .hero-section {
   background-color: var(--hero-background-color);
   padding: 188px 0;
+  background-image: url(../images/hero/hero.jpg);
+  background-position: center;
+  background-size: cover;
 }
 .hero-container {
   width: 496px;
@@ -414,4 +417,7 @@ img {
 .social-media {
   font-weight: 500;
   width: 208px;
+}
+.social-media-list {
+  list-style: none;
 }
