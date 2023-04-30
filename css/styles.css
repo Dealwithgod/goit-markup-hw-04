@@ -325,9 +325,7 @@ img {
   gap: var(--indent);
   justify-content: center;
 }
-.card-container-item {
-  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
-}
+
 /* Cards Team */
 .team-list {
   background-color: var(--hero-text-color);
@@ -338,8 +336,8 @@ img {
 }
 .crew {
   width: 264px;
-  --items: 4;
-  flex-basis: calc((100% - var(var(--indent)) * (var(--items)-1)) / var(--items));
+  /* --items: 4;
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items)); */
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -385,6 +383,37 @@ img {
   margin-top: 120px;
   margin-bottom: 120px;
 }
+
+.client {
+  --items: 6;
+  display: flex;
+  justify-content: center;
+  gap: var(--indent);
+  flex-basis: calc((100% - (var(--indent)) * (var(--items)-1)) / var(--items));
+}
+
+.client-link {
+  width: 168px;
+  height: 88px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--subtle-text-color);
+  color: var(--subtle-text-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.client-link:hover,
+.client-link:focus {
+  border: 1px solid var(--secondary-btn-color);
+  color: var(--secondary-btn-color);
+  border-radius: 4px;
+}
+.client-icon {
+  fill: currentColor;
+}
+
 /* .crew-description  */
 /* display: flex; */
 /* width: 264px; */
