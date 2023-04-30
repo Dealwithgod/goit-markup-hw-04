@@ -89,7 +89,7 @@ img {
 .header {
   background-color: var(--white-background-color);
   border-bottom: 1px solid var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 /* navigation in header */
 .nav {
@@ -144,7 +144,7 @@ img {
 .hero-section {
   background-color: var(--hero-background-color);
   padding: 188px 0;
-  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero/hero.jpg);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -341,7 +341,10 @@ img {
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-
+.card-description {
+  padding: 32px 0px;
+  text-align: center;
+}
 .crew-subtitle {
   margin-bottom: 8px;
 }
@@ -379,9 +382,12 @@ img {
 }
 /* Customers */
 
+.customer-title {
+  line-height: 1.1;
+}
 .customers-subsection {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .client {
@@ -426,10 +432,6 @@ img {
 /* } */
 
 /* PORTFOLIO page */
-.card-description {
-  padding: 32px 16px;
-  text-align: center;
-}
 
 .portfolio {
   padding: 96px 0 120px;
@@ -459,6 +461,11 @@ img {
   margin-bottom: 8px;
 }
 /* Footer */
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
 .footer {
   padding: 100px 0;
   color: var(--light-color);
@@ -481,7 +488,12 @@ img {
   font-size: 16px;
   width: 264px;
   font-style: normal;
-  gap: 120px;
+}
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  width: 264px;
+  margin-right: 120px;
 }
 .social-footer {
   display: flex;
